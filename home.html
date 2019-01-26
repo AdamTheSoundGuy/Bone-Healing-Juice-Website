@@ -9,6 +9,9 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+      <!-- Icon Initialization Link -->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
       <!--Title-->
       <title>Bone Healing Juice</title>
     </head>
@@ -17,29 +20,52 @@
 
       <!-- Navigation Bar -->
       <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Bone Healing Juice</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="youtube.html">YouTube</a></li>
-            <li><a href="reddit.html">Reddit</a></li>
-          </ul>
-        </div>
-      </nav>
-
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Bone Healing Juice</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="youtube.html">YouTube</a></li>
+        <li><a href="reddit.html">Reddit</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Mobile Menu Does Not Work -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><h3 class="center-align">Menu</h3></li>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="youtube.html">YouTube</a></li>
+    <li><a href="reddit.html">Reddit</a></li>
+  </ul>
 
       <div class="container">
-        <h1>Bone Healing Juice</h1>
-        <h3>Coming Soon</h3>
-        <!-- Button -->
-        <!--a target="_blank" href="https://www.google.com/?gws_rd=ssl">
-        <button class="waves-effect waves-light btn"><i class="material-icons left">search</i>button</button>
-      </a-->
+        <h1>Welcome To The Bone Healing Juice Website</h1>
+        <br>
+
+        <!-- Season 2 Announcement -->
+        <h3>Season 2</h3>
+        <p class="flow-text">Season 2 of Bone Healing Juice premieres on February 4th!  Mark your calendars to watch the premiere live on YouTube at 11:45 EST.</p>
+        <a target="_blank" href="https://www.youtube.com/watch?v=_21JUKVRZU4">
+        <button class="waves-effect waves-light btn"><i class="material-icons right">live_tv</i>Click Here To Go To The Premiere Site</button></a>
+
+        <!-- New Website Announcement -->
+        <br>
+        <h3>New Website</h3>
+        <p class="flow-text">Welcome to the brand new Bone Healing Juice Website.  Here you can find more information and announcements about Bone Healing Juice.  This site is still new so please give us some time to get all of our information out here.</p>
+
       </div>
 
-
+      <!-- jquery initalization -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- JavaScript for mobil menu -->
+      <script>
+      $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+      </script>
     </body>
   </html>
